@@ -9,8 +9,12 @@ st.set_page_config(
     layout="wide"
 )
 
+# ==============================================================================
+# PORTADA INSTITUCIONAL
+# ==============================================================================
 st.title("⚡ Simulador Interactivo de Campos y Señales")
-st.markdown("**CADI Matemáticas Especiales — Universidad de Cundinamarca**")
+st.markdown("**CADI Matemáticas Especiales — Universidad de Cundinamarca** | **Gestor:** Mgtr. Arley Rodríguez")
+st.markdown("**Integrantes:** Daniel Felipe Virguez Mateus • Sheccid Avila Rojas • Daniel Enrique Castro Vargas • Jimmy Andres Nivia Castillo")
 st.caption("Acoplamiento matemático paso a paso entre plano complejo, ecuaciones armónicas y síntesis espectral de Fourier.")
 
 # ==============================================================================
@@ -93,7 +97,6 @@ with tab1:
     m3.metric("Imagen w = f(z)", f"{w_val.real:.2f} {signo_w} i{abs(w_val.imag):.2f}")
     m4.metric("Polar de w", f"{r_w:.3f} ∠ {theta_w_deg:.2f}°")
 
-    # PROCEDIMIENTO EN BLOQUE DE CÓDIGO / TEXTO CLARO (NUNCA FALLA)
     st.markdown("### 📝 Procedimiento Matemático Paso a Paso")
     
     if "z²" in funcion_mapeo:
